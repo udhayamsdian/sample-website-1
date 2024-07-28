@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none !important;
+}
+body{
+    background-color:linear-gradient(to right,rgb(234, 0, 255),blue,white) ;
+    
+}
+/* .loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    transition: 10s !important;
+    background:white url(../images/image_processing20210910-11459-11i25f0.gif)no-repeat ;
+    background-position: center;
+    background-size: cover;
+} */
+.spinner{
+    /* width: 80px;
+    height: 80px;
+    border: 10px solid red;
+    color: black;
+    border-radius: 50%;
+    border-top: 10px solid black; */
+    animation: spin 10s ease-in-out infinite;
+    margin: 60%;
+    padding: 60%;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.btn{
+    color: black !important;
+    font-weight: 600 !important;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background-color: black;
+    color: white;
+    animation: navigate 0.5s ease-in-out;
+    text-decoration: none;
+}
+#navbar .btn a{
+    text-decoration: none;
+    color: black;
+}
+#navbar .btn a:hover{
+    color: black;
+    border: none ;
+}
+@keyframes navigate{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+.navbar .navbar-brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: red;
+}
+#navbarSupportedContent a{
+    color:white;
+    border-bottom: 2px solid transparent ;
+}
+#navbarSupportedContent a:hover{
+    color: red;
+   
+    transform: scale(1.1);
+}
+#navbarSupportedContent button{
+    background:red;
+    border-radius: 15px;
+    color:black;
+    /* text-decoration: double; */
+   
+}
+section{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#Home{
+    
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url("../images/relove.webp");
+    /* background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url("../images/wallpaperflare.com_wallpaper.jpg"); */
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#Home h1{
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 5px 0px black,0px 5px 0px black;
+    animation: tag 1s ease-in-out ;
+}
+#Home h1 span{
+    background: linear-gradient(to right,rgb(206, 203, 203) 0%,blueviolet,blue 50%,white 100%);
+    background-clip: text;
+    color: transparent;
+  
+}
+/* @keyframes tag{
+    0%{
+        transform: translateY(-100%);}
+
+} */
+
+#Home p{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+#Home h2{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background: red !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+    /* color: black; */
+    color: white;
+    font-weight: 600;
+   
+}
+#New{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: grey; */
+    background: linear-gradient(to right,rgb(234, 0, 255),blue,white);
+    overflow: hidden;
+}
+#New h1{
+    font-weight: 500;
+    font-size: 50px;
+}
+#New p{
+    word-spacing: 5px;
+}
+#Motorcycle{
+    /* background:grey; */
+    background: linear-gradient(to right,rgb(234, 0, 255),blue,white);
+    gap: 20px;
+    overflow: hidden;
+}
+#Motorcycle h1{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+#Motorcycle img{
+    width: 200px;
+    height: 200px;
+    
+}
+.card{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+    background:white !important;
+    box-shadow: 15px 20px 20px rgba(0,0,20,.3),
+                inset 10px 10px 20px rgb(22, 22, 22);
+    border-radius: 20px !important;
+    margin-bottom: 20px;
+    
+}
+.card:hover{
+    box-shadow: inset 20px 10px 20px  rgba(0,0,0,.3),
+                inset 10px 10px  20px white;
+                transition: .2s;
+}
+.card .card-img-top:hover{
+    overflow: unset;
+    height: 100px;
+    width: 200px;
+    margin-top: 20px;
+}
+#Contact{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 600;
+    overflow: hidden;
+    background: linear-gradient(to right,rgb(234, 0, 255),blue,white);
+   
+}
+#Contact form{
+    input{
+        background-color: transparent;
+    }
+    textarea{
+        background-color: transparent;
+    }
+    
+}
+
+#review  .card-img-tops{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.cards{
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items:center; 
+    /* border: none !important;
+    background:white !important; */
+    /* box-shadow: 15px 20px 20px rgba(0,0,20,.3),
+                inset 10px 10px 20px rgb(22, 22, 22); */
+    border-radius: 20px !important;
+    margin-bottom: 20px;
+    color: black;
+    border: 2px solid black;
+    position: static;
+}
+.card-bodys h5 {
+    margin-top:20px ;
+    z-index: 100;
+}
+.card-bodys .ratting{
+    display: flex;
+    color: black;
+}
+.card-body .ratting:hover{
+    color: red;
+    transform: scaleY(30deg);
+}
+.cards:hover{
+      transform:scale(1.5);
+      box-shadow: 5px 8px 32px 0 red; 
+}
+.rows{
+    display: flex;
+    justify-content: space-around;
+    flex: nowrap;
+    justify-items: center;
+}
+
+
+#services{
+    #cards{
+        position: relative;
+        overflow: hidden;
+        
+      }.card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.8); */
+        background: linear-gradient(to bottom,red,black);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border: 2px solid white;
+        color: black;
+      }
+      
+      .card:hover .card-overlay {
+        opacity: 1;
+      }
+      #button{
+        color:white;
+        font-weight: 700;
+        background-color: red;
+        border-radius: 20px;
+      }
+      
+      .card-overlay-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        color: #fff;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(100%);
+      }
+      
+      #cards:hover .card-overlay-content {
+        transform: translateY(0);
+      }
+      
+      h1{
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      background: linear-gradient(to right,rgb(234, 0, 255),blue,white);
+}
+#customer-review{
+    /* background: blueviolet; */
+    background: linear-gradient(to right,rgb(234, 0, 255),blue,white);
+    overflow: hidden;
+    font-family:'Times New Roman', Times, serif;
+    display: grid;
+    place-items: center;
+    .section-header{
+        position: relative;
+        padding-bottom: 25px;
+        text-align: center;
+        font-weight: 900;
+        color:  black;
+    }
+    .section-header:after{
+        content: '';
+        height: 3px;
+        width: 200px;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 100px);
+        background: transparent;
+    }
+    .section-header span{
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .testimonials{
+        max-width: 1000px;
+        padding: 0 15px 50px;
+        margin:  0 auto 80px auto;
+    }
+    .single-item{
+        /* background: white; */
+        background: transparent;
+        color: black;
+        padding: 15px;
+        margin: 50px 15px;
+    }
+    .profile{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .img-area{
+        margin: 0 15px 15px;
+    }
+    .img-area img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 7px solid black;
+    }
+    .content{
+        font-size: 18px;
+    }
+    .content p{
+        text-align: justify;
+    }
+    .content p span{
+        font-size: 48px;
+        margin-right: 20px;
+        color:black;
+    }
+    .socials i{
+        margin-right: 25px;
+    }
+    .bio h4{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon{
+        background-color: black;
+    }
+}
